@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/space-tourism/static/css/main.073c9b0a.css",
+    "main.js": "/space-tourism/static/js/main.2d699589.js",
+    "static/media/background-home-desktop.jpg": "/space-tourism/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "index.html": "/space-tourism/index.html",
+    "main.073c9b0a.css.map": "/space-tourism/static/css/main.073c9b0a.css.map",
+    "main.2d699589.js.map": "/space-tourism/static/js/main.2d699589.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2d699589.js"
+  ]
+}
