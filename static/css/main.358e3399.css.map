@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.358e3399.css","mappings":"AAAA,KAEE,uDAA+D,CAD/D,QAEF,CCHA,KACE,iBACF","sources":["index.css","App.css"],"sourcesContent":["body {\n  margin: 0;\n  font-family: 'Barlow Condensed', sans-serif, 'Bellefair', serif;\n}",".App {\n  text-align: center;\n}"],"names":[],"sourceRoot":""}
