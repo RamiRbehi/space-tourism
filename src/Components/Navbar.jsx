@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components"
 import logo from "../images/logo.svg";
 
@@ -22,11 +23,10 @@ const Logo = styled.img`
 `
 
 const Hr = styled.hr`
-    /* flex: 2; */
     background: rgba(255,255,255,0.5);
+    opacity: .5;
     height: 1px;
     border: 0;
-    /* margin: 0 300px; */
     width: 35vw;
     position: absolute;
     top: 40px;
@@ -41,25 +41,26 @@ const Right = styled.div`
     backdrop-filter: blur(9px);
     
 `
-const Li = styled.li`
+const NavLink = styled.a`
     display: inline-block;
     justify-content: center;
     text-align: center;
     width: 9em;
     cursor: pointer;
+    letter-spacing: 1.5px;
 `
 const Span = styled.span`
     margin-right: 1em;
     font-weight: 600;
 `
-const Ul = styled.ul`
+const Nav = styled.div`
     list-style: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 16px;
-    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 17px;
     
-    ${Li}::after{
+    ${NavLink}::after{
         content: "";
         position: absolute;
         width: 0%;
@@ -69,13 +70,13 @@ const Ul = styled.ul`
         bottom: 1%;
     }
 
-    ${Li}:hover::after{
-        width: 17%;
+    ${NavLink}:hover::after{
+        width: 22%;
         height: 2px;
         background-color: rgba(255,255,255,0.5);
     }
 
-    ${Li}:active::after{
+    ${NavLink}:active::after{
         background-color: #fff;
     }
 `
@@ -86,16 +87,26 @@ const Navbar = () => {
   return (
     <Container>
             <Left>
-                <Logo src={logo}></Logo>
+                <Link to="/">
+                <Logo src={logo} alt="logo"></Logo>
+                </Link>
             <Hr />
             </Left>
             <Right>
-                <Ul>
-                    <Li><Span>00</Span> Home</Li>
-                    <Li><Span>01</Span> Destination</Li>
-                    <Li><Span>02</Span> Crew</Li>
-                    <Li><Span>04</Span> Technology</Li>
-                </Ul>
+                <Nav>
+                    <Link to="/" style={{ textDecoration: 'inherit', color: 'inherit' }}>
+                    <NavLink><Span>00</Span> Home</NavLink>
+                    </Link>
+                    <Link to="/destinations" style={{ textDecoration: 'inherit', color: 'inherit' }}>
+                    <NavLink><Span>01</Span> Destination</NavLink>
+                    </Link>
+                    <Link to="/crew" style={{ textDecoration: 'inherit', color: 'inherit' }}>
+                    <NavLink><Span>02</Span> Crew</NavLink>
+                    </Link>
+                    <Link to="/technologies" style={{ textDecoration: 'inherit', color: 'inherit' }}>
+                    <NavLink><Span>04</Span> Technology</NavLink>
+                    </Link>
+                </Nav>
             </Right>
     </Container>
   )

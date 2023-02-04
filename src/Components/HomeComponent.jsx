@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import bghomeDesktop from "../images/background-home-desktop.jpg"
+import bgHomeDesktop from "../images/background-home-desktop.jpg"
 
 
 const Container = styled.div`
 width: 100%;
 height: 100vh;
 position: relative;
-background: url(${bghomeDesktop});
+background: url(${bgHomeDesktop});
 display: flex;
 `
 const TitleContainer = styled.div`
@@ -70,7 +70,7 @@ const HomeComponent = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title5>So, youant to travel</Title5>
+        <Title5>So, you want to travel</Title5>
         <Title1>Space</Title1>
         <Description>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</Description>
       </TitleContainer>
