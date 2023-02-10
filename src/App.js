@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
-// import Destinations from './Components/Destinations';
 import Crew from './Components/Crew';
 import Technologies from './Components/Technologies';
 import Destinations from './Components/Destinations';
