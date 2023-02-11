@@ -47,7 +47,6 @@ const TitleContainer = styled.div`
   })}
 
   ${mobile({
-    // paddingTop: "100px",
     width: "350px"
   })}
 `

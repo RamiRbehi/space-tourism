@@ -92,7 +92,6 @@ const DestImage = styled.img`
 
 const Right = styled.div`
     flex: 1;
-    /* display: flex; */
     justify-content: start;
     align-items: center;
     text-align: start;

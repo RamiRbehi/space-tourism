@@ -24,7 +24,6 @@ const Container = styled.div`
 })}
 
 ${mobile({
-    // display:"none"
     marginLeft: "0",
     left: "30px",
     top: "20px"
@@ -36,10 +35,6 @@ const Left = styled.div`
 `
 const Logo = styled.img`
     float: left;
-
-    ${mobile({
-    // marginRight: "150px"
-  })}
 `
 
 const Hr = styled.hr`
@@ -86,7 +81,7 @@ const Right = styled.div`
         })}
     }
 `
-const NavLink = styled.a`
+const NavLink = styled.p`
     display: inline-block;
     justify-content: center;
     text-align: center;
@@ -124,7 +119,7 @@ const Nav = styled.div`
     text-transform: uppercase;
     color: #fff;
     font-size: 18px;
-    margin-top: 17px;
+    padding-left: 50px;
     
     ${NavLink}::after{
         content: "";
@@ -156,15 +151,13 @@ const Nav = styled.div`
         display: "flex",
         flexDirection: "column",
         width: "100%",
-        gap: "30px"
+        gap: "30px",
+        paddingLeft: "20px"
     })}
 `
 const ResponsiveButton = styled.div`
     ${mobile({
-    // marginRight: "20px",
-    // marginTop: "15px",
     position: "absolute",
-    // left: "120px"
     right: "20px",
     top: "20px",
     zIndex: "1"

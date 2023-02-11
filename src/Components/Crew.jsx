@@ -233,8 +233,8 @@ const Crew = () => {
     <Container>
         <Navbar/>
         <Heading><Span>02</Span>meet your crew</Heading>
-            {crewDetails.map((crew, i)=>(
-        <Wrapper crew={crew} key={crew.i} slideBio={slideBio}>
+            {crewDetails.map((crew)=>(
+        <Wrapper crew={crew} key={crew.id} slideBio={slideBio}>
             <Silde>
                 <InfoContainer>
                 <Role>{crew.role}</Role>

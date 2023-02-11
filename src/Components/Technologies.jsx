@@ -266,8 +266,8 @@ const Technologies = () => {
                 <Button onClick={() => handleClick(0)}>2</Button>
                 <Button onClick={() => handleClick(1)}>3</Button>
             </ButtonContainer> 
-        {technologies.map((technology, i) => (
-            <Wrapper technology={technology} key={technology.i} slideTech={slideTech}>
+        {technologies.map((technology) => (
+            <Wrapper technology={technology} key={technology.id} slideTech={slideTech}>
                 <Slider>
             <TechInfo>
                 <Subheading>the terminomogy...</Subheading>
